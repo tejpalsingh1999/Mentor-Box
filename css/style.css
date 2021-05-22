@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   display: grid;
-  grid-template-columns: 12rem repeat(8, 1fr) 12rem; }
+  grid-template-columns: 0.5fr repeat(8, 1fr) 0.5fr; }
 
 .heading-primary {
   font-family: 'Poppins', sans-serif;
@@ -28,6 +28,14 @@ body {
     color: #000; }
   .heading-primary--primary {
     color: var(--color-primary); }
+  .heading-primary--center {
+    text-align: center; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.grid {
+  grid-column: 1/-1; }
 
 .header {
   background-color: var(--color-primary);
@@ -71,7 +79,6 @@ body {
 
 .section-intro {
   grid-column: 2/10;
-  padding: 0rem 10rem;
   height: 91vh;
   display: flex;
   justify-content: space-between;
@@ -89,7 +96,23 @@ body {
 
 .section-work {
   background-color: var(--color-primary);
-  grid-column: 2/10; }
+  padding: 10rem 0;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) repeat(3, min-content) minmax(12rem, 1fr);
+  justify-content: center; }
+  .section-work .container-test {
+    grid-column: 2/-2;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-gap: 5rem;
+    grid-row-gap: 15rem; }
+  .section-work__examples-images {
+    display: block; }
+  .section-work__examples-para {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #fff; }
 
 .section-webinars {
   background-color: #807676;

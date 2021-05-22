@@ -2,6 +2,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 4.5rem;
     font-weight: 500;
+    
 
     &--white{
         color: #fff;
@@ -13,5 +14,9 @@
 
     &--primary{
         color: var(--color-primary);
+    }
+
+    &--center{
+        text-align: center;
     }
 }

@@ -1,7 +1,6 @@
 .section-intro{
     //background-color: rgba($color: #807676, $alpha: 1.0);
     grid-column: 2/10;
-    padding: 0rem 10rem;
     height: 91vh;
     display: flex;
     justify-content: space-between;
@@ -26,8 +25,35 @@
 }
 
 .section-work{
+    .container-test{
+        grid-column: 2/-2;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+        grid-gap: 5rem;
+        grid-row-gap: 15rem;
+    }
+
     background-color: var(--color-primary);
-    grid-column: 2/10;
+    padding: 10rem 0;
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: minmax(12rem,1fr) repeat(3,min-content) minmax(12rem,1fr);
+    justify-content: center;
+
+        &__examples{
+           
+            //width: min-content;
+
+            &-images{
+                display: block;
+            }
+            &-para{
+                font-weight: 300;
+                font-size: 3rem;
+                color: #fff;
+            }
+        }
 }
 
 .section-webinars{

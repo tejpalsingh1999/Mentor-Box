@@ -16,5 +16,5 @@ body{
 
 
     display: grid;
-    grid-template-columns: 12rem repeat(8, 1fr) 12rem;
+    grid-template-columns: .5fr repeat(8, 1fr) .5fr;
 }
