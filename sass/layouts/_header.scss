@@ -1,4 +1,66 @@
 .header{
     background-color: var(--color-primary);
     grid-column: 1/11;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+
+    &__icon{
+        img{
+            display: block;
+            width: 7rem;
+        }
+    }
+
+    &__nav{
+        
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        
+        
+    }
+
+    &__items{
+        
+    }
+
+    &__link:link,
+    &__link:visited{
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 2rem;
+        color: #fff;
+        padding: 1rem 2rem;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+       
+        
+
+        &-mentor{
+            background-color: #fff;
+            height: 100%;
+            border-radius: 5px;
+            padding: 1rem 1.5rem;
+            margin-right: 1.5rem;
+            &-para{
+                font-size: 1.8rem;
+                color: var(--color-primary);
+            }
+        }
+        
+        &:last-child img{
+            display: block;
+            width: 100%;
+        }
+    }
 }

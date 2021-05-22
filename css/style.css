@@ -20,7 +20,39 @@ body {
 
 .header {
   background-color: var(--color-primary);
-  grid-column: 1/11; }
+  grid-column: 1/11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem; }
+  .header__icon img {
+    display: block;
+    width: 7rem; }
+  .header__list {
+    list-style: none;
+    display: flex; }
+  .header__link:link, .header__link:visited {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 2rem; }
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header__buttons-mentor {
+      background-color: #fff;
+      height: 100%;
+      border-radius: 5px;
+      padding: 1rem 1.5rem;
+      margin-right: 1.5rem; }
+      .header__buttons-mentor-para {
+        font-size: 1.8rem;
+        color: var(--color-primary); }
+    .header__buttons:last-child img {
+      display: block;
+      width: 100%; }
 
 .footer {
   background-color: var(--color-secondary);
