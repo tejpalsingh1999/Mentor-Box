@@ -1,0 +1,59 @@
+:root {
+  --color-primary: #36A4AA;
+  --color-secondary: #1A649D; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: 12rem repeat(8, 1fr) 12rem; }
+
+.header {
+  background-color: var(--color-primary);
+  grid-column: 1/11; }
+
+.footer {
+  background-color: var(--color-secondary);
+  grid-column: 1/-1; }
+
+.section__intro {
+  background-color: #807676;
+  grid-column: 2/10; }
+
+.section__work {
+  background-color: var(--color-primary);
+  grid-column: 2/10; }
+
+.section__webinars {
+  background-color: #807676;
+  grid-column: 2/10; }
+
+.section__features {
+  background-color: var(--color-primary);
+  grid-column: 2/10; }
+
+.section__mentors {
+  background-color: #807676;
+  grid-column: 2/10; }
+
+.section__prompt-mentors {
+  background-color: var(--color-primary);
+  grid-column: 2/10; }
+
+.section__experience {
+  background-color: #807676;
+  grid-column: 2/10; }
+
+.section__download {
+  background-color: var(--color-primary);
+  grid-column: 2/10; }
