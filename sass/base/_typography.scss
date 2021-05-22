@@ -1,0 +1,17 @@
+.heading-primary{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 500;
+
+    &--white{
+        color: #fff;
+    }
+
+    &--black{
+        color: #000;
+    }
+
+    &--primary{
+        color: var(--color-primary);
+    }
+}

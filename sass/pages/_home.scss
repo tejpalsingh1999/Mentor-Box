@@ -1,29 +1,51 @@
-.section__intro{
-    background-color: rgba($color: #807676, $alpha: 1.0);
+.section-intro{
+    //background-color: rgba($color: #807676, $alpha: 1.0);
     grid-column: 2/10;
+    padding: 0rem 10rem;
+    height: 91vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -7rem;
+    margin-bottom: 7rem;
+
+    .intro{
+        font-weight: 300;
+        font-size: 3rem;
+        color: #000;
+        line-height: 4.5rem;
+        margin-top: 2.5rem;
+    }
+
+    &__picture{
+        
+        & img{
+            width: 60rem;
+        }
+    }
 }
 
-.section__work{
+.section-work{
     background-color: var(--color-primary);
     grid-column: 2/10;
 }
 
-.section__webinars{
+.section-webinars{
     background-color: rgba($color: #807676, $alpha: 1.0);
     grid-column: 2/10;
 }
 
-.section__features{
+.section-features{
     background-color: var(--color-primary);
     grid-column: 2/10;
 }
 
-.section__mentors{
+.section-mentors{
     background-color: rgba($color: #807676, $alpha: 1.0);
     grid-column: 2/10;
 }
 
-.section__prompt-mentors{
+.section-prompt-mentors{
     background-color: var(--color-primary);
     grid-column: 2/10;
 }

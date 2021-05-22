@@ -18,6 +18,17 @@ body {
   display: grid;
   grid-template-columns: 12rem repeat(8, 1fr) 12rem; }
 
+.heading-primary {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500; }
+  .heading-primary--white {
+    color: #fff; }
+  .heading-primary--black {
+    color: #000; }
+  .heading-primary--primary {
+    color: var(--color-primary); }
+
 .header {
   background-color: var(--color-primary);
   grid-column: 1/11;
@@ -58,27 +69,41 @@ body {
   background-color: var(--color-secondary);
   grid-column: 1/-1; }
 
-.section__intro {
-  background-color: #807676;
-  grid-column: 2/10; }
+.section-intro {
+  grid-column: 2/10;
+  padding: 0rem 10rem;
+  height: 91vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -7rem;
+  margin-bottom: 7rem; }
+  .section-intro .intro {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #000;
+    line-height: 4.5rem;
+    margin-top: 2.5rem; }
+  .section-intro__picture img {
+    width: 60rem; }
 
-.section__work {
+.section-work {
   background-color: var(--color-primary);
   grid-column: 2/10; }
 
-.section__webinars {
+.section-webinars {
   background-color: #807676;
   grid-column: 2/10; }
 
-.section__features {
+.section-features {
   background-color: var(--color-primary);
   grid-column: 2/10; }
 
-.section__mentors {
+.section-mentors {
   background-color: #807676;
   grid-column: 2/10; }
 
-.section__prompt-mentors {
+.section-prompt-mentors {
   background-color: var(--color-primary);
   grid-column: 2/10; }
 
