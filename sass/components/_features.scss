@@ -1,0 +1,10 @@
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-row-gap: 10rem;
+    grid-column-gap: 8rem;
+
+    &__img{
+
+    }
+}

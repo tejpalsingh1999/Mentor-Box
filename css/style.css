@@ -74,6 +74,12 @@ body {
     display: block;
     margin-bottom: 2rem; }
 
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-row-gap: 10rem;
+  grid-column-gap: 8rem; }
+
 .header {
   background-color: var(--color-primary);
   grid-column: 1/11;
@@ -152,7 +158,10 @@ body {
 
 .section-features {
   background-color: var(--color-primary);
-  grid-column: 2/10; }
+  grid-column: 1/-1;
+  padding: 8rem 0 10rem 0;
+  display: grid;
+  justify-content: center; }
 
 .section-mentors {
   background-color: #807676;
