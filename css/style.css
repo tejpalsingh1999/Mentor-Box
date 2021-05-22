@@ -20,7 +20,7 @@ body {
 
 .heading-primary {
   font-family: 'Poppins', sans-serif;
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   font-weight: 500; }
   .heading-primary--white {
     color: #fff; }
@@ -31,11 +31,48 @@ body {
   .heading-primary--center {
     text-align: center; }
 
+.heading-secondary {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500; }
+
+.para {
+  font-weight: 300;
+  font-size: 2.5rem; }
+  .para--white {
+    color: #fff; }
+  .para--black {
+    color: #000; }
+
 .u-margin-bottom-large {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
 .grid {
   grid-column: 1/-1; }
+
+.upcoming-webinar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 10rem;
+  grid-column-gap: 8rem; }
+
+.webinar {
+  width: min-content; }
+  .webinar__img {
+    margin-bottom: 2rem; }
+
+.works {
+  grid-column: 2/-2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-column-gap: 8rem;
+  grid-row-gap: 10rem; }
+  .works__examples-images {
+    display: block;
+    margin-bottom: 2rem; }
 
 .header {
   background-color: var(--color-primary);
@@ -49,7 +86,10 @@ body {
     width: 7rem; }
   .header__list {
     list-style: none;
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: center;
+    grid-column-gap: 1.5rem; }
   .header__link:link, .header__link:visited {
     font-weight: 500;
     text-decoration: none;
@@ -68,7 +108,8 @@ body {
       margin-right: 1.5rem; }
       .header__buttons-mentor-para {
         font-size: 1.8rem;
-        color: var(--color-primary); }
+        color: var(--color-primary);
+        text-align: center; }
     .header__buttons:last-child img {
       display: block;
       width: 100%; }
@@ -99,24 +140,15 @@ body {
   padding: 10rem 0;
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: minmax(12rem, 1fr) repeat(3, min-content) minmax(12rem, 1fr);
+  grid-template-columns: repeat(3, min-content);
   justify-content: center; }
-  .section-work .container-test {
-    grid-column: 2/-2;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    grid-gap: 5rem;
-    grid-row-gap: 15rem; }
-  .section-work__examples-images {
-    display: block; }
-  .section-work__examples-para {
-    font-weight: 300;
-    font-size: 3rem;
-    color: #fff; }
 
 .section-webinars {
-  background-color: #807676;
-  grid-column: 2/10; }
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  justify-content: center;
+  margin: 8rem 0 12rem 0; }
 
 .section-features {
   background-color: var(--color-primary);
