@@ -24,6 +24,10 @@
     font-family: 'Poppins', sans-serif;
     font-size: 4.5rem;
     font-weight: 500;
+
+    &--center{
+        text-align: center;
+    }
 }
 .para{
     font-weight: 300;
@@ -36,4 +40,12 @@
     &--black{
         color: #000;
     }
+}
+.footer-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 3.4rem;
+    
 }

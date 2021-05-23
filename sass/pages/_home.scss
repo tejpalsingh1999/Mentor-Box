@@ -55,21 +55,34 @@
 }
 
 .section-mentors{
-    background-color: rgba($color: #807676, $alpha: 1.0);
-    grid-column: 2/10;
+    grid-column: 1/-1;
+    
+    padding: 8rem 0 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(3,min-content) ;
+    justify-content: center;
+
 }
 
 .section-prompt-mentors{
     background-color: var(--color-primary);
-    grid-column: 2/10;
+    grid-column: 1/-1;
+    padding: 8rem 0 10rem 0;
+    
 }
 
-.section__experience{
-    background-color: rgba($color: #807676, $alpha: 1.0);
-    grid-column: 2/10;
+.section-experience{
+    grid-column: 2/-2;
+    padding: 8rem 0 10rem 0;
+    display: grid;
+    
 }
 
-.section__download{
+.section-download{
     background-color: var(--color-primary);
-    grid-column: 2/10;
+    grid-column: 1/-1;
+
+    display: grid;
+    justify-content: center;
+
 }

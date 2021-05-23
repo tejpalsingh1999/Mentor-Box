@@ -1,0 +1,23 @@
+.experience{
+    
+    display: grid;
+    grid-template-columns: min-content 40%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 20rem;
+
+    &__img{
+        width: min-content
+    }
+
+    &__para{
+        width: 100%;
+    }
+
+    &__user{
+        margin-top: 5rem;
+        font-size: 2rem;
+    }
+
+}

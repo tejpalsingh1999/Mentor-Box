@@ -1,0 +1,25 @@
+.download{
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: min-content 40%;
+    align-items: center;
+    grid-column-gap: 25rem;
+
+    &__img{
+        margin-left: -5rem;
+
+        & img{
+            
+        }
+    }
+
+    &__info{
+
+        &-logo{
+            display: inline-block;
+            width: 25.4rem;
+            height: 8.5rem;
+
+        }
+    }
+}
