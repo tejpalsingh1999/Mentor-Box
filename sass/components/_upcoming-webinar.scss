@@ -1,14 +1,29 @@
 .upcoming-webinar{
+    grid-column: 2/-2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 10rem;
     grid-column-gap: 8rem;
 
+    @media only screen and (max-width: $bp-largest){
+        grid-column-gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        grid-template-columns: repeat(1, minmax(min-content, max-content));
+        grid-column-gap: 5rem;
+        grid-row-gap: 7rem;
+        justify-items: center;
+    }
 }
 .webinar{
     width: min-content;
 
     &__img{
         margin-bottom: 2rem;
+
+        @media only screen and (max-width: $bp-mini){
+            width: 35rem;
+         }
     }
 }

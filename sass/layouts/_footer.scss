@@ -10,16 +10,50 @@
         justify-content: space-between;
         align-items: center;
         background-color: var(--color-primary);
+
+        @media only screen and (max-width: $bp-medium){
+            padding: 3rem 8rem;
+        }
+        @media only screen and (max-width: $bp-small){
+            padding: 3rem 4rem;
+        }
+        @media only screen and (max-width: $bp-smallest){
+            padding: 2rem 2rem;
+       }
+       @media only screen and (max-width: $bp-mini){
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 0rem;
+        }
+        
         &-social{
-
+            @media only screen and (max-width: $bp-mini){
+                margin-bottom: 2rem;
+            }
+            @media only screen and (max-width: $bp-micro){
+                margin-bottom: 0;
+                
+            }
             &-text{
-
+                @media only screen and (max-width: $bp-mini){
+                    text-align: center;
+                }
+                
             }
             &-icon{
                 margin-top: 1rem;
+
+                & > *{
+                    @media only screen and (max-width: $bp-small){
+                        width: 3rem;
+                    }
+                }
             }
             &-icon img:not(:last-child){
                 margin-right: 1rem;
+                @media only screen and (max-width: $bp-mini){
+                    margin-right: 1.7rem;
+                }
             }
         }
 
@@ -28,9 +62,27 @@
             .footer__nav{
                 display: flex;
                 list-style: none;
+                justify-items: center;
 
                 &-list{
                     margin-right: 7rem;
+                    @media only screen and (max-width: $bp-largest){
+                        margin-right: 4rem;
+                    }
+                    
+                    @media only screen and (max-width: $bp-smallest){
+                        margin-right: 2rem;
+                    }
+                    @media only screen and (max-width: $bp-mini){
+                        margin-right: 0rem;
+                        padding: 0 1rem;
+                    }
+                    @media only screen and (max-width: $bp-micro){
+                        display: none;
+                        
+                    }
+
+                    
 
                     & a:link,
                     & a:visited{
@@ -51,6 +103,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (max-width: $bp-mini){
+            padding: 2rem 5rem;
+        }
+        @media only screen and (max-width: $bp-micro){
+           padding: 2rem 2rem;
+            
+        }
+        
+        
 
         &:last-child{
             color: #fff;

@@ -2,6 +2,14 @@
     font-family: 'Poppins', sans-serif;
     font-size: 4.2rem;
     font-weight: 500;
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 3.7rem;
+    }
+
+    @media only screen and (max-width: $bp-mini){
+       font-size: 3.5rem;
+    }
     
 
     &--white{
@@ -24,6 +32,11 @@
     font-family: 'Poppins', sans-serif;
     font-size: 4.5rem;
     font-weight: 500;
+    
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 4rem;
+    }
 
     &--center{
         text-align: center;
@@ -32,6 +45,13 @@
 .para{
     font-weight: 300;
     font-size: 2.5rem;
+    hyphens: auto;
+    @media only screen and (max-width: $bp-small){
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: $bp-mini){
+        font-size: 1.75rem;
+    }
     
     &--white{
         color: #fff;
@@ -48,4 +68,8 @@
     color: #fff;
     line-height: 3.4rem;
     
+    @media only screen and (max-width: $bp-micro){
+        font-size: 1.5rem;
+        
+    }
 }

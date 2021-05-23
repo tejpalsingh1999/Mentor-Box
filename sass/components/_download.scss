@@ -4,11 +4,38 @@
     grid-template-columns: min-content 40%;
     align-items: center;
     grid-column-gap: 25rem;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-largest){
+        grid-column-gap: 12rem;
+    }
+    @media only screen and (max-width: $bp-medium){
+        grid-column-gap: 8rem;
+    }
+    @media only screen and (max-width: $bp-mini){
+        grid-template-columns: min-content;
+    }
+    
 
     &__img{
-        margin-left: -5rem;
-
-        & img{
+        @media only screen and (max-width: $bp-medium){
+            display: block;
+            width: 45rem;
+        }
+        @media only screen and (max-width: $bp-small){
+            
+            width: 40rem;
+        }
+        @media only screen and (max-width: $bp-smallest){
+            
+            width: 37rem;
+        }
+        @media only screen and (max-width: $bp-mini){
+            margin-bottom: 2rem;
+        }
+        @media only screen and (max-width: $bp-micro){
+            
+            width: 35rem;
             
         }
     }
@@ -19,6 +46,12 @@
             display: inline-block;
             width: 25.4rem;
             height: 8.5rem;
+
+            @media only screen and (max-width: $bp-small){
+                width: 20rem;
+                height: 7rem;
+                
+            }
 
         }
     }

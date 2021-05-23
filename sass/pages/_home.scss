@@ -8,6 +8,12 @@
     margin-top: -7rem;
     margin-bottom: 7rem;
 
+    @media only screen and (max-width: $bp-smallest){
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
     .intro{
         font-weight: 300;
         font-size: 3rem;
@@ -20,6 +26,16 @@
         
         & img{
             width: 60rem;
+            
+            @media only screen and (max-width: $bp-small){
+                width: 40rem;
+            }
+            @media only screen and (max-width: $bp-smallest){
+                width : 60rem;
+            }
+            @media only screen and (max-width: $bp-mini){
+                width: 45rem;
+            }
         }
     }
 }
@@ -84,5 +100,6 @@
 
     display: grid;
     justify-content: center;
+    justify-items: center;
 
 }

@@ -4,13 +4,27 @@
 
     display: flex;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     padding: 1rem 10rem;
+    @media only screen and (max-width: $bp-medium){
+        padding: 1rem 6rem;
+    }
+    @media only screen and (max-width: $bp-smallest){
+        padding: 1rem 2rem;
+    }
 
     &__icon{
         img{
             display: block;
             width: 7rem;
+
+            @media only screen and (max-width: $bp-small){
+                width: 5rem;
+            }
+            @media only screen and (max-width: $bp-mini){
+                width: 4rem;
+            }
         }
     }
 
@@ -24,6 +38,17 @@
         grid-template-columns: repeat(6, max-content);
         justify-content: center;
         grid-column-gap: 1.5rem;
+
+        @media only screen and (max-width: $bp-largest){
+            grid-column-gap: .5rem;
+        }
+        @media only screen and (max-width: $bp-medium){
+            grid-column-gap: .1rem;
+        }
+
+        @media only screen and (max-width: $bp-mini){
+            display: none;
+        }
         
     }
 
@@ -38,6 +63,10 @@
         font-size: 2rem;
         color: #fff;
         padding: 1rem 2rem;
+
+        @media only screen and (max-width: $bp-medium){
+            padding: 1rem 1.5rem;
+        }
     }
 
     &__buttons{
@@ -58,12 +87,37 @@
                 font-size: 1.8rem;
                 color: var(--color-primary);
                 text-align: center;
+
+                @media only screen and (max-width: $bp-small){
+                    font-size: 1.3rem;
+                }
+            }
+
+            @media only screen and (max-width: $bp-small){
+                margin-right: 0rem;
+                padding: .5rem 1rem;
+            }
+            @media only screen and (max-width: $bp-mini){
+                margin-right: 2rem;
             }
         }
         
-        &:last-child img{
+        & a img{
             display: block;
             width: 100%;
+            @media only screen and (max-width: $bp-small){
+                display: none;
+            }
+        }
+    }
+    &__hamburger{
+        
+        display: none;
+        @media only screen and (max-width: $bp-mini){
+            display: block;
+            fill: #fff;
+            width: 2rem;
+            height: 2rem;
         }
     }
 }

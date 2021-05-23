@@ -2,3 +2,12 @@
     --color-primary : #36A4AA;
     --color-secondary: #1A649D;
 }
+
+//BREAKPOINTS
+$bp-largest: 87.5em; //1400px
+$bp-large: 81.25em; //1300px 
+$bp-medium: 75em; //1200px
+$bp-small: 62.5em; //1000px
+$bp-smallest: 50em; //800px
+$bp-mini: 43.75em; //700px;
+$bp-micro: 34.37em; //700px;
